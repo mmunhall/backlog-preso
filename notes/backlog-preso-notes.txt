@@ -1,0 +1,87 @@
+The Product Backlog
+
+    Applies to Scrum methodology, but useful elsewhere.
+    Arguably, the single most important artifact in the Scrum methodology
+
+What makes it work
+    Single copy and single source of truth
+    Available to EVERYONE, ANYTIME (Place high value on collaboration and transparency)
+    Living, breathing document that is groomed constantly
+    It outlines and ranks the organizations goals - gives a reasonable expectation of what can be delivered and when
+    All players can add tasks
+
+Canoe's current system: The Scrum board and the Management Report
+    Scrum Board falls short because it is physically too big to use as a backlog. It is also physically difficult to find and arrange tasks.
+    Available only at planning and pre-planning
+    Very little visibility beyond the next couple sprints
+        Little opportunity to provide feedback
+    Stories are not pointed
+
+
+The Players
+    Product Owner: Owns and maintains the Backlog, the person most responsible for understanding the needs of the business. Gathers input, takes feedback and is lobbied by many people, is ultimately teh one that makes the call and what gets built.
+    Developers: Refer to the Backlog as their bible
+    QA: Refer to the Backlog as their bible
+    Management: Complete understanding of what the engineering group is working on, what has been delivered, and a fair expectation of when future tasks will be completed.
+
+Understanding Velocity
+
+Example Diagram
+
+    Types of entires:
+        Epics
+            MMFs
+                Stories (Small enough to complete in a 2-week interation - INVEST: independent, negotiable, valuable, estimable, small, testable)
+        Tech Tasks (a.k.a. Chores)
+        Defects (a.k.a. Bugs)
+        Spikes (a.k.a. Prototypes)
+    The lower in the backlog, the more volatility to expect. The higher in the backlog, the less volatility to expect.
+    It is expected that items will shift in rank, will be redefined and repointed, but frequent changes to the top of the backlog is a sign of a problem.
+    Every item is ranked or ordered -- not prioritized
+
+What Canoe Does
+
+Definition
+    Simple: A list of things to do
+    Advanced: An ordered list of eveyrthing that might be needed in the product and is the single source of requirements for any changes to be made to the product.
+    Captures requests for modifying the product
+        adding, updating, deprecating, removing features
+        fixing bugs
+
+Who it Benefits
+
+How to Use It
+
+    Too many ideas, not enough resources: Everything is valid (but doesn't need to be fleshed out thoroughly at first), everything is ranked, anything can be moved up in rank.
+
+How to Start One For Your Team
+
+    Start with the current sprint
+    Add only the most well-understood stories
+    Continually add and update
+        Pre-planning
+
+Benefits to Canoe to Using a Real Backlog
+
+Variations on the Typical Backlog
+
+    Trello
+    Trello -> Typical Format -> Management Report
+    Write access to all - Google Docsbac
+
+
+Advanced Topics
+
+    Preplanning techniques
+        Ad hoc discussions
+        Planning poker
+        Formal preplanning (What Canoe does today)
+    Multiple teams, multiple backlogs -- strongly discouraged
+    Multiple teams, single backlog
+    Cost Estimate (Story Points) vs. Business Values Estimate. The relationship of the two determines the ROI, which is how items are ranked.
+        Additionally, add points for risk and necessity to further determine an item's rank.
+
+References
+
+    http://agilebench.com/blog/the-product-backlog-for-agile-teams
+    http://scrummethodology.com/the-scrum-backlog/
