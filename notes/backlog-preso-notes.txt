@@ -1,3 +1,13 @@
+Intro
+
+In the agile presentation last year from myself, Julie and Charley, I mentioned the backlog artifact and hoped that the idea would pick up steam, but it didn't.
+Despite the fact that we are fairly succesful with our agile process, especially compared to most other engineering organizations I've worked, it's surprising that we've gotten by for so long without the glue that holds it all together, a real product backlog.
+Earlier this year, Val and I started a product backlog for the Mystery Men team, particularly for the Campaign Manager product.
+After a few weeks of tweaking and grooming our initial creation we ended up a document and a process that greatly improved how we work every day.
+Since then, with Katharine's help, our backlog has grown.
+I want to re-introduce the product backlog artifact to you, make you realize it's power and it's benefits across the entire organization and show each Scrum team how to get one started
+
+
 The Product Backlog
 
     Applies to Scrum methodology, but useful elsewhere.

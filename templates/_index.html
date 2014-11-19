@@ -12,14 +12,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    
+
         <link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
-    
+
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/reveal-highlight-themes/styles/zenburn.css" id="highlight-theme">
 
-        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <style>
+            .slides .footer {
+                display: block;
+                position: absolute;
+                bottom: 400px;
+                left: 50%;
+                margin-left: -750px;
+                z-index: 20;
+                font-size: 0.35em;
+            }
+            .slides .footer img {
+                padding-right: 10px;
+            }
+        </style>
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
           if( window.location.search.match( /print-pdf/gi ) ) {
             var link = document.createElement( 'link' );
@@ -53,6 +68,11 @@
                         </section>
                     <% } %>
                 <% }); %>
+
+                <div class="footer">
+                    <img src="img/canoelogo.png" width="65" height="21" alt="Canoe Ventures, LLC">
+                    Mike Munhall
+                </div>
             </div>
 
         </div>
