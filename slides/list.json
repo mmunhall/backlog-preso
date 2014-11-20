@@ -1,4 +1,13 @@
 [
     "index.html",
-    "teach-me.html"
+    [
+        "what-is-it.html",
+        {
+            "filename": "rank-not-priority.html",
+            "attr": {
+                "data-background": "img/silicon-valley-prioritized.png"
+            }
+        }
+    ],
+    "make-it-successful.html"
 ]
