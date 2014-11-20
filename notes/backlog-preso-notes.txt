@@ -73,6 +73,7 @@ How to Start One For Your Team
 
 Words of Warning
     Do not group by sprint. That's what story points and velocity is for. Grouping by sprint sets unreasonable expectations. Current + Next is okay, but beyond that use some other terminology.
+    If your highly ranked items are not fully vetted and cannot be assgined points, then those tasks should be put into the wish list or completed by the product owner.
 
 Variations on the Typical Backlog
 
