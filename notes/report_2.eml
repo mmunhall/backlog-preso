@@ -1,0 +1,2131 @@
+Received: from CO2PR0601MB0999.namprd06.prod.outlook.com (25.160.8.139) by
+ CO2PR0601MB0998.namprd06.prod.outlook.com (25.160.8.13) with Microsoft SMTP
+ Server (TLS) id 15.1.6.9 via Mailbox Transport; Fri, 31 Oct 2014 11:38:55
+ +0000
+Received: from CO2PR0601MB0998.namprd06.prod.outlook.com (25.160.8.13) by
+ CO2PR0601MB0999.namprd06.prod.outlook.com (25.160.8.139) with Microsoft SMTP
+ Server (TLS) id 15.1.6.9; Fri, 31 Oct 2014 11:38:54 +0000
+Received: from CO2PR0601MB0998.namprd06.prod.outlook.com ([25.160.8.13]) by
+ CO2PR0601MB0998.namprd06.prod.outlook.com ([25.160.8.13]) with mapi id
+ 15.01.0006.000; Fri, 31 Oct 2014 11:38:53 +0000
+From: Tim Whitton <Tim.Whitton@canoeventures.net>
+To: Tim Whitton <Tim.Whitton@canoeventures.net>
+Subject: 2014 Sprint Planning Outline 
+Thread-Topic: 2014 Sprint Planning Outline 
+Thread-Index: Ac/f55yXpLkYcKSLQti1vFvSihEQBg==
+Date: Fri, 31 Oct 2014 11:38:53 +0000
+Message-ID:
+	<3f2837d2934b4978b575899b66da5584@CO2PR0601MB0998.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 03
+X-MS-Exchange-Organization-AuthSource:
+	CO2PR0601MB0998.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+Content-Type: multipart/alternative;
+	boundary="_000_3f2837d2934b4978b575899b66da5584CO2PR0601MB0998namprd06_"
+MIME-Version: 1.0
+
+--_000_3f2837d2934b4978b575899b66da5584CO2PR0601MB0998namprd06_
+Content-Type: text/plain; charset="us-ascii"
+
+For Sprint W (ends November 21)
+1.       HP Infrastructure - Performance Test
+2.       Performance Test - Pod Optimization
+3.       Data Collector  - Routing
+4.       COX National ADS Implementation
+5.       Campaign Manager - UX Improvements and Fixes from Ops
+6.       POIS (COX) - SignalGroup Reconciliation
+7.       Reporting - Benchmark Insights
+8.       Innovid Integration - CIP & SMSi
+9.       JAVA Upgrade (regression test Java 1.6 apps on Java 1.8 machine)
+
+For Sprint X (ends December 9)
+1.       HP Infrastructure - Performance Test
+2.       Data Collector - Data Persistence/SMSi Pub
+3.       COX National ADS Implementation
+4.       Campaign Manager (Prep for Pilot User, UX Improvements and Fixes from Ops)
+5.       POIS (COX) - Ad Map selection logic
+6.       POD Optimization - SMSi change
+7.       Performance Test - DC Routing
+8.       Reporting (Benchmark Insights, Support for migration to HPC)
+9.       Tech Debt - Separate SMSi Ingestion/Dedup/Relay from reporting
+10.   Innovid SaFI (CIP & SMSi) Integration
+11.   JAVA Upgrade
+
+For Sprint Y (ends December 18 - short sprint)
+1.       HP Infrastructure - Performance Test
+2.       Campaign Manager - Support Pilot User, UX Improvements and Fixes from Ops
+3.       Data Collector - ID encryption/decryption
+4.       Reporting - Ad-Hoc DEbAS support (HPC), Benchmark Insights, Reporting Portal)
+5.       Performance Test - DC Routing
+6.       POIS (COX) - Signal Group Reconciliation
+7.       Operational Improvements - MD Ingestion Source tracking
+8.       JAVA Upgrade
+
+For Sprint Z (ends January 6, 2015)
+1.       Campaign Manager -  External Launch Prep, UX improvements,
+2.       Performance Test - DC Persistence/SMSi Publishing
+3.       POIS (COX) - Ownership Execution
+4.       Data Collector - ID encryption/decryption
+5.       JAVA Upgrade
+
+For Sprint A (ends January 20, 2015)
+1.       Operational Improvements - Implement hBase Alarms/Alerts
+2.       Campaign Manager -  External Launch Prep, Pilot feedback, Storyboard]
+3.       Reporting -In-Home Insights, Reporting Portal
+4.       CIP Publishing - StoryBoard
+5.       ADS - StoryBoard
+6.       Performance Test - Data Routing)
+7.       POIS (COX) - Asset Ingestion
+8.       Operational Improvements - Implement CIS from ADS/CAAS for availability
+9.       Data Collector - ID encryption/decryption
+
+For Sprint B (ends Feb 3, 2015)
+1.       Performance Test - hBase Alarms/Alerts
+2.       Campaign Manager -  External Launch Prep, Pilot feedback, Storyboard
+3.       Reporting -Reporting Portal, Insights package
+4.       CIP Publishing - StoryBoard
+5.       ADS - StoryBoard
+6.       Ad Load Manager
+7.       Data Collector (ID encryption/decryption)
+8.       Operational Improvements - Implement CIS from ADS/CAAS for availability
+9.       Operational Improvements - MPX Feed Implementation
+
+For Sprint C (ends Feb 17, 2015)
+1.       Campaign Manager -  External Launch Support, Storyboard
+2.       Reporting -Reporting Portal, Insights package
+3.       CIP Publishing - StoryBoard
+4.       ADS - StoryBoard
+5.       Performance Test - POIS
+6.       Ad Load Manager
+7.       Data Collector - ID encryption/decryption
+8.       Operational Improvements - Implement CIS from ADS/CAAS for availability
+9.       Operational Improvements - MPX Feed Implementation
+
+For Sprint D (ends Mar 3, 2015)
+1.       Reporting -Reporting Portal, Insights package
+2.       Performance Test - Storyboard, POIS
+3.       Ad Load Manager
+4.       Operational Improvements - Implement CIS from ADS/CAAS for availability
+5.       Operational Improvements - MPX Feed Implementation
+
+
+Backlog
+
+NCIS - Support Dynamic Updates / Movie Assets (requires MD3.0 source)
+
+Restore Freq Cap Cache after outage
+
+ODCR Ingestion and Reporting
+
+CISCollector - MD3.0 with AMI transport (in support of AMC)
+
+Allow Multiple Day Parts in a CIP
+
+Other items from 2014 Product Schedule
+Ad Asset break/position targeting
+Story Boarding
+Ad Map Publishing (MD3.0 Flow)
+Addressability
+Data Correlation Engine
+AD-ID
+IP (TVE - Linear)
+Ad Sharing (Trial) - PIE?
+Reporting (addressable?)
+Reporting (Neilson Demo)
+MRC Ad Verification
+Data Analytics - Ad Sharing
+
+
+Goal/Allocation Calc Improvements
+********* Enhanced Goal Re-Allocation based on performance
+********* Integrate Placement Conversion into ASAP goal evaluation - Stories Complete
+********* Integrate Load Factor into the even goal calculation - Stories Complete
+********* Integrate Multiple Providers into Placement Conversion
+********* Provider based credence configuration
+********* Support reporting on goal allocation by interval for a CL
+GUI on Programmer/Network Configurations (CAAS)
+GUI on ADS Configurations
+Related to Self Service Portal
+********* Campaign Copy feature
+********* Enable/Disable Ad Asset (macro level)
+********* Reporting Portal for Programmers
+********* CM - CI and Asset flight/active window constraints to enforce business logic.
+MMF 4233 - Compares of provider values are NOT case sensitive, Compares of Provider_ID values are NOT case sensitive.
+Provider based credence configuration
+More DCE Agents
+Enhancing BAS - Automation for Break Point Fallout reporting
+Support "None", Session, and "backToBack" (only break is currently supported) as configurable provider defaults for Ad Copy Separation
+Dashboards (Self Service Portal)
+FreeWheel Operational Requirements
+1.       Allow tech ops to "pause" a Freewheel campaign/campaign line.  Tech Ops is allowed to "un-pause" as well.  Updates from Freewheel must not "un-pause" the campaign/campaign line.  This could be a different permission than the standard tech ops user.
+Update our Metadata ingestion Process to persist a time stamp (date/time of ingestion) for each piece of metadata ingested
+Invoicing - process automation
+Ad Map Manager - make compliant with MD3.0 Ad Map Publishing requirements
+ADS Ad Availability Registration Model (ADS to MSO CIS)  - Needed if Comcast uses ADS
+Content Metadata Ingestion (MD 3.0 compliant) (CAAS) - Needed at same time as MSOs support MD 3.0
+Comcast VodSystemRef
+Mock ADS
+Encryption for Data Security
+Improve SMSi Administrator features.
+Implement Unlimited goal in CIP Publisher
+
+
+
+
+
+
+
+--_000_3f2837d2934b4978b575899b66da5584CO2PR0601MB0998namprd06_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="cid:filelist.xml@01D0000C.CF6AB9B0"><!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:TrackMoves/>
+<w:TrackFormatting/>
+<w:EnvelopeVis/>
+<w:ValidateAgainstSchemas/>
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF/>
+<w:LidThemeOther>EN-US</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:DoNotExpandShiftReturn/>
+<w:BreakWrappedTables/>
+<w:SplitPgBreakAndParaMark/>
+<w:EnableOpenTypeKerning/>
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math"/>
+<m:brkBin m:val="before"/>
+<m:brkBinSub m:val="&#45;-"/>
+<m:smallFrac m:val="off"/>
+<m:dispDef/>
+<m:lMargin m:val="0"/>
+<m:rMargin m:val="0"/>
+<m:defJc m:val="centerGroup"/>
+<m:wrapIndent m:val="1440"/>
+<m:intLim m:val="subSup"/>
+<m:naryLim m:val="undOvr"/>
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false" DefSemiHidden="false" DefQFormat="false" DefPriority="99" LatentStyleCount="371">
+<w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+<w:LsdException Locked="false" Priority="9" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 6"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 7"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 8"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index 9"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 1"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 2"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 3"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 4"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 5"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 6"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 7"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 8"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" Name="toc 9"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Normal Indent"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="footnote text"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="annotation text"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="header"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="footer"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="index heading"/>
+<w:LsdException Locked="false" Priority="35" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="table of figures"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="envelope address"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="envelope return"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="footnote reference"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="annotation reference"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="line number"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="page number"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="endnote reference"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="endnote text"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="table of authorities"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="macro"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="toa heading"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Bullet"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Number"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Bullet 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Bullet 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Bullet 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Bullet 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Number 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Number 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Number 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Number 5"/>
+<w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Closing"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Signature"/>
+<w:LsdException Locked="false" Priority="1" SemiHidden="true" UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text Indent"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Continue"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Continue 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Continue 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Continue 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="List Continue 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Message Header"/>
+<w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Salutation"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Date"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text First Indent"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text First Indent 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Note Heading"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text Indent 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Body Text Indent 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Block Text"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Hyperlink"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="FollowedHyperlink"/>
+<w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+<w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Document Map"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Plain Text"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="E-mail Signature"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Top of Form"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Bottom of Form"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Normal (Web)"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Acronym"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Address"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Cite"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Code"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Definition"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Keyboard"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Preformatted"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Sample"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Typewriter"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="HTML Variable"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Normal Table"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="annotation subject"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="No List"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Outline List 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Outline List 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Outline List 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Simple 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Simple 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Simple 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Classic 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Classic 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Classic 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Classic 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Colorful 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Colorful 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Colorful 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Columns 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Columns 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Columns 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Columns 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Columns 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 6"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 7"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Grid 8"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 4"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 5"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 6"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 7"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table List 8"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table 3D effects 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table 3D effects 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table 3D effects 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Contemporary"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Elegant"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Professional"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Subtle 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Subtle 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Web 1"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Web 2"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Web 3"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Balloon Text"/>
+<w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+<w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true" Name="Table Theme"/>
+<w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+<w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+<w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+<w:LsdException Locked="false" Priority="34" QFormat="true" Name="List Paragraph"/>
+<w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+<w:LsdException Locked="false" Priority="30" QFormat="true" Name="Intense Quote"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+<w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+<w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+<w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+<w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+<w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+<w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+<w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+<w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+<w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+<w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+<w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+<w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+<w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+<w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+<w:LsdException Locked="false" Priority="19" QFormat="true" Name="Subtle Emphasis"/>
+<w:LsdException Locked="false" Priority="21" QFormat="true" Name="Intense Emphasis"/>
+<w:LsdException Locked="false" Priority="31" QFormat="true" Name="Subtle Reference"/>
+<w:LsdException Locked="false" Priority="32" QFormat="true" Name="Intense Reference"/>
+<w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+<w:LsdException Locked="false" Priority="37" SemiHidden="true" UnhideWhenUsed="true" Name="Bibliography"/>
+<w:LsdException Locked="false" Priority="39" SemiHidden="true" UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+<w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+<w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+<w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+<w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+<w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+<w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light Accent 1"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful Accent 1"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful Accent 1"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light Accent 2"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful Accent 2"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful Accent 2"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light Accent 3"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful Accent 3"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful Accent 3"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light Accent 4"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful Accent 4"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful Accent 4"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light Accent 5"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful Accent 5"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful Accent 5"/>
+<w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light Accent 6"/>
+<w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+<w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+<w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+<w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+<w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful Accent 6"/>
+<w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful Accent 6"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light Accent 1"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful Accent 1"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful Accent 1"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light Accent 2"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful Accent 2"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful Accent 2"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light Accent 3"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful Accent 3"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful Accent 3"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light Accent 4"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful Accent 4"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful Accent 4"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light Accent 5"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful Accent 5"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful Accent 5"/>
+<w:LsdException Locked="false" Priority="46" Name="List Table 1 Light Accent 6"/>
+<w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+<w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+<w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+<w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+<w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful Accent 6"/>
+<w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful Accent 6"/>
+</w:LatentStyles>
+</xml><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.diffcontext
+	{mso-style-name:diffcontext;
+	mso-style-unhide:no;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle26
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.apple-tab-span
+	{mso-style-name:apple-tab-span;
+	mso-style-unhide:no;}
+span.EmailStyle28
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle29
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle30
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle31
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle32
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle33
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle34
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle35
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle36
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:#1F497D;}
+span.EmailStyle37
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle38
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle39
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle40
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle41
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle42
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle43
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle44
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle45
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle46
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle47
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle48
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle49
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle50
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle51
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle52
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle53
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle54
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle55
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle56
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle57
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle58
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle59
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle60
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle61
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle62
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle63
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle64
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle65
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle66
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle67
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle68
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle69
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle70
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle71
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle72
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle73
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle74
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle75
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle76
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle77
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle78
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.EmailStyle79
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:60254205;
+	mso-list-type:hybrid;
+	mso-list-template-ids:854094382 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:344328775;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-166844142 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:454443277;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1030322912 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:919339327;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-939897608 1328865150 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l4
+	{mso-list-id:969169618;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-412834870 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l5
+	{mso-list-id:1042096762;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1609945026 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l6
+	{mso-list-id:1749230476;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1169397322 517900508 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l6:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l6:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l6:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l6:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l7
+	{mso-list-id:1858959274;
+	mso-list-type:hybrid;
+	mso-list-template-ids:771753288 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l7:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l7:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l7:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l7:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l7:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l8
+	{mso-list-id:1938053729;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-312462640 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l8:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l8:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l8:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l8:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l8:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l9
+	{mso-list-id:1979258114;
+	mso-list-type:hybrid;
+	mso-list-template-ids:713165538 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l9:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l9:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l9:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l9:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l10
+	{mso-list-id:2021081284;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1442290220 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l10:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l10:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l10:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l10:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l10:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l10:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l10:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l10:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l10:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 10]><style>/* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style><![endif]--><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="blue" vlink="purple" style="tab-interval:.5in">
+<div class="WordSection1">
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint W (ends November 21)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>HP Infrastructure - Performance Test</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test - Pod Optimization</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector<span style="mso-spacerun:yes">&nbsp; </span>
+- Routing</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>COX National ADS Implementation</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager &#8211; UX Improvements and Fixes from Ops</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>POIS (COX) &#8211; SignalGroup Reconciliation</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting - Benchmark Insights</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Innovid Integration - CIP &amp; SMSi</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l10 level1 lfo2">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">9.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>JAVA Upgrade (regression test Java 1.6 apps on Java 1.8 machine)</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint X (ends December 9)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>HP Infrastructure - Performance Test</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector - Data Persistence/SMSi Pub</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>COX National ADS Implementation</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager (Prep for Pilot User, UX Improvements and Fixes from Ops)</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>POIS (COX) &#8211; Ad Map selection logic</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>POD Optimization &#8211; SMSi change<o:p></o:p></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test &#8211; DC Routing</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting (Benchmark Insights, Support for migration to HPC)</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">9.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Tech Debt &#8211; Separate SMSi Ingestion/Dedup/Relay from reporting</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">10.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span></span><![endif]>Innovid SaFI (CIP &amp; SMSi) Integration</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">11.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span></span><![endif]>JAVA Upgrade</p>
+<p class="MsoNormal" style="text-align:justify"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint Y (ends December 18 &#8211; short sprint)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>HP Infrastructure - Performance Test</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager - Support Pilot User, UX Improvements and Fixes from Ops</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector &#8211; ID encryption/decryption</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting &#8211; Ad-Hoc DEbAS support (HPC), Benchmark Insights, Reporting Portal)</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test - DC Routing</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>POIS (COX) &#8211; Signal Group Reconciliation</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - MD Ingestion Source tracking</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo6">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>JAVA Upgrade</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint Z (ends January 6, 2015)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l6 level1 lfo8">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager &#8211; &nbsp;External Launch Prep, UX improvements,
+</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l6 level1 lfo8">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test &#8211; DC Persistence/SMSi Publishing</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l6 level1 lfo8">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>POIS (COX) &#8211; Ownership Execution</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l6 level1 lfo8">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector - ID encryption/decryption</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l6 level1 lfo8">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>JAVA Upgrade</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint A (ends January 20, 2015)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements &#8211; Implement hBase Alarms/Alerts</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager &#8211; &nbsp;External Launch Prep, Pilot feedback, Storyboard]</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting &#8211;In-Home Insights, Reporting Portal</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>CIP Publishing - StoryBoard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>ADS - StoryBoard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test - Data Routing)</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>POIS (COX) &#8211; Asset Ingestion</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - Implement CIS from ADS/CAAS for availability</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l9 level1 lfo10">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">9.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector - ID encryption/decryption</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint B (ends Feb 3, 2015)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test - hBase Alarms/Alerts</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager &#8211; &nbsp;External Launch Prep, Pilot feedback, Storyboard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting &#8211;Reporting Portal, Insights package</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>CIP Publishing - StoryBoard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>ADS - StoryBoard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Ad Load Manager</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector (ID encryption/decryption)</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - Implement CIS from ADS/CAAS for availability</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l5 level1 lfo12">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">9.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - MPX Feed Implementation</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint C (ends Feb 17, 2015)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Manager &#8211; &nbsp;External Launch Support, Storyboard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting &#8211;Reporting Portal, Insights package</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>CIP Publishing - StoryBoard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>ADS - StoryBoard</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test &#8211; POIS</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Ad Load Manager</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Data Collector - ID encryption/decryption</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - Implement CIS from ADS/CAAS for availability</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo14">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">9.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - MPX Feed Implementation</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">For Sprint D (ends Mar 3, 2015)<o:p></o:p></span></b></p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l8 level1 lfo16">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting &#8211;Reporting Portal, Insights package</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l8 level1 lfo16">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performance Test &#8211; Storyboard, POIS</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l8 level1 lfo16">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Ad Load Manager</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l8 level1 lfo16">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - Implement CIS from ADS/CAAS for availability</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l8 level1 lfo16">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Operational Improvements - MPX Feed Implementation</p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class="MsoNormal"><b><u><span style="color:#1F497D">Backlog<o:p></o:p></span></u></b></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align:justify">NCIS - Support Dynamic Updates / Movie Assets (requires MD3.0 source)</p>
+<p class="MsoNormal" style="text-align:justify"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align:justify">Restore Freq Cap Cache after outage</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align:justify">ODCR Ingestion and Reporting</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-family:&quot;Times New Roman&quot;,serif">CISCollector</span> &#8211; MD3.0 with AMI transport (in support of AMC)</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align:justify">Allow Multiple Day Parts in a CIP</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">Other items from 2014 Product Schedule<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="text-align:justify">Ad Asset break/position targeting</p>
+<p class="MsoNormal">Story Boarding</p>
+<p class="MsoNormal" style="text-align:justify">Ad Map Publishing (MD3.0 Flow)</p>
+<p class="MsoNormal" style="text-align:justify">Addressability</p>
+<p class="MsoNormal">Data Correlation Engine</p>
+<p class="MsoNormal">AD-ID</p>
+<p class="MsoNormal">IP (TVE &#8211; Linear)</p>
+<p class="MsoNormal">Ad Sharing (Trial) &#8211; PIE?</p>
+<p class="MsoNormal">Reporting (addressable?)</p>
+<p class="MsoNormal">Reporting (Neilson Demo)</p>
+<p class="MsoNormal">MRC Ad Verification</p>
+<p class="MsoNormal">Data Analytics &#8211; Ad Sharing</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Goal/Allocation <span style="font-family:&quot;Times New Roman&quot;,serif">
+Calc</span> Improvements </p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l7 level1 lfo18"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#00B050"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#00B050">Enhanced Goal Re-Allocation based on performance<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l7 level1 lfo18"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Integrate Placement Conversion into ASAP goal evaluation &#8211; Stories Complete</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l7 level1 lfo18"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Integrate Load Factor into the even goal calculation &#8211; Stories Complete</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l7 level1 lfo18"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Integrate Multiple Providers into Placement Conversion</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l7 level1 lfo18"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Provider based credence configuration</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l7 level1 lfo18"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#00B050"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#00B050">Support reporting on goal allocation by interval for a CL<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#00B050">GUI on Programmer/Network Configurations (CAAS)<o:p></o:p></span></p>
+<p class="MsoNormal">GUI on ADS Configurations</p>
+<p class="MsoNormal">Related to Self Service Portal</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l1 level1 lfo20"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Campaign Copy feature</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l1 level1 lfo20"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Enable/Disable Ad Asset (macro level)</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l1 level1 lfo20"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Reporting Portal for Programmers</p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l1 level1 lfo20"><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:black">CM &#8211; CI and Asset flight/active window constraints to enforce business logic.<o:p></o:p></span></p>
+<p class="MsoNormal"><s><span style="color:#00B050">MMF 4233 - Compares of provider values are NOT case sensitive, Compares of
+</span></s><s><span style="font-family:&quot;Times New Roman&quot;,serif;color:#00B050">Provider_ID</span><span style="color:#00B050"> values are NOT case sensitive.<o:p></o:p></span></s></p>
+<p class="MsoNormal">Provider based credence configuration</p>
+<p class="MsoNormal">More DCE Agents</p>
+<p class="MsoNormal">Enhancing BAS - Automation for Break Point Fallout reporting</p>
+<p class="MsoNormal">Support &quot;None&quot;, Session, and &quot;<span style="font-family:&quot;Times New Roman&quot;,serif">backToBack</span>&quot; (only break is currently supported) as configurable provider defaults for Ad Copy Separation</p>
+<p class="MsoNormal" style="text-align:justify">Dashboards (Self Service Portal)</p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-family:&quot;Times New Roman&quot;,serif">FreeWheel</span> Operational Requirements</p>
+<p class="MsoListParagraph" style="margin-left:.25in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+<![if !supportLists]><span style="mso-bidi-font-family:Calibri;color:#1F497D"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Allow tech ops to &#8220;pause&#8221; a Freewheel campaign/campaign line. &nbsp;Tech Ops is allowed to &#8220;un-pause&#8221; as well.&nbsp; Updates from Freewheel must not &#8220;un-pause&#8221; the campaign/campaign line.&nbsp; This could be a different
+ permission than the standard tech ops user.<o:p></o:p></span></p>
+<p class="MsoNormal">Update our Metadata ingestion Process to persist a time stamp (date/time of ingestion) for each piece of metadata ingested</p>
+<p class="MsoNormal">Invoicing &#8211; process automation</p>
+<p class="MsoNormal">Ad Map Manager &#8211; make compliant with MD3.0 Ad Map Publishing requirements</p>
+<p class="MsoNoSpacing">ADS Ad Availability Registration Model (ADS to MSO CIS) &nbsp;- Needed if Comcast uses ADS</p>
+<p class="MsoNoSpacing">Content Metadata Ingestion (MD 3.0 compliant) (CAAS) - Needed at same time as MSOs support MD 3.0</p>
+<p class="MsoNormal">Comcast <span style="font-family:&quot;Times New Roman&quot;,serif">VodSystemRef</span></p>
+<p class="MsoNormal">Mock ADS</p>
+<p class="MsoNormal">Encryption for Data Security</p>
+<p class="MsoNormal">Improve <span style="font-family:&quot;Times New Roman&quot;,serif">SMSi</span> Administrator features.</p>
+<p class="MsoNormal">Implement Unlimited goal in CIP Publisher<span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_3f2837d2934b4978b575899b66da5584CO2PR0601MB0998namprd06_--

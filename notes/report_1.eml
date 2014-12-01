@@ -1,0 +1,445 @@
+Received: from CO2PR0601MB0999.namprd06.prod.outlook.com (25.160.8.139) by
+ CO2PR0601MB0998.namprd06.prod.outlook.com (25.160.8.13) with Microsoft SMTP
+ Server (TLS) id 15.1.6.9 via Mailbox Transport; Fri, 31 Oct 2014 14:15:48
+ +0000
+Received: from CO2PR0601MB0998.namprd06.prod.outlook.com (25.160.8.13) by
+ CO2PR0601MB0999.namprd06.prod.outlook.com (25.160.8.139) with Microsoft SMTP
+ Server (TLS) id 15.1.6.9; Fri, 31 Oct 2014 14:15:46 +0000
+Received: from CO2PR0601MB0998.namprd06.prod.outlook.com ([25.160.8.13]) by
+ CO2PR0601MB0998.namprd06.prod.outlook.com ([25.160.8.13]) with mapi id
+ 15.01.0006.000; Fri, 31 Oct 2014 14:15:46 +0000
+From: Tim Whitton <Tim.Whitton@canoeventures.net>
+To: Tim Whitton <Tim.Whitton@canoeventures.net>
+Subject: Sprint X Planning (ends December 9)
+Thread-Topic: Sprint X Planning (ends December 9)
+Thread-Index: AdAAHfpe+y7zS29pR+WoYrTvwqUKbw==
+Date: Fri, 31 Oct 2014 14:15:45 +0000
+Message-ID:
+	<dbcc289eae0547058f108151a40bde39@CO2PR0601MB0998.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	CO2PR0601MB0998.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+Content-Type: multipart/alternative;
+	boundary="_000_dbcc289eae0547058f108151a40bde39CO2PR0601MB0998namprd06_"
+MIME-Version: 1.0
+
+--_000_dbcc289eae0547058f108151a40bde39CO2PR0601MB0998namprd06_
+Content-Type: text/plain; charset="us-ascii"
+
+For Sprint X (ends December 9)
+1.      HP Infrastructure - Performance Test
+2.      Data Collector - Data Persistence/SMSi Pub
+3.      COX National ADS Implementation
+4.      Campaign Manager (Prep for Pilot User, UX Improvements and Fixes from Ops)
+5.      POIS (COX) - Ad Map selection logic
+6.      POD Optimization - SMSi change
+7.      Performance Test - DC Routing
+8.      Reporting (Benchmark Insights, Support for migration to HPC)
+9.      Tech Debt - Separate SMSi Ingestion/Dedup/Relay from reporting
+10.     Innovid SaFI (CIP & SMSi) Integration
+11.     JAVA Upgrade
+
+Epic 6330 - Canoe Data Collector
+MMF 6343 - When a message is received through a Collection endpoint, the Data Collector validates messages
+
+MMF 6491 - Tech Ops User configures Data Collector
+6493 - Data Collector endpoint is designated for Collection or Routing
+6503 - Tech Ops User configures a max response time for PlacementRequest
+6504 - Tech Ops User configures a max response time for PlacementStatusNotification
+6355 - Tech Ops User Configures Identity/ProviderID combination with routing endpoint - U
+
+MMF 6495 - Data Collector Routes messages received through a routing endpoint
+6484 - Data Collector routes a PlacementRequest message received through a Routing endpoint - U
+6496 - Data Collector routes a PlacementResponse message when PlacementRequest was routed - U
+6497 - Data Collector routes a PlacementStatusNotification message received through a Routing endpoint - W
+6499 - Data Collector routes a PlacementStatusAcknowledgement message when PlacementStatusNotification was routed - W
+6500 - Routed message is validated
+6522 - Data Collector routing is Fault Tolerant
+6523 - Data Collector routing uses redundant infrastructure
+
+
+COX Integration (SCTE 130)
+
+MMF 6246 - POD Optimization (non ADS)
+6639 - SCTE ingester persists multiple placements per placement decision - W (Tranformers)
+6252 - ADM produces PlacementRequests with PlacementOpportunities allowing more than 1 placement (BA Router Configuration)
+6611 - The ADS meets current performance requirements when PlacementRequest contain optimized opportunities (maxPlacement>1)
+6255 - Produce an "Unfilled Break Duration" report.
+6247 - ADS excludes campaign lines that target position greater than the sum of the maxPlacement of all opportunities in the break - V
+6248 - ADS uses breakPlacementSequence for position targeting - V
+6253 - ADS places "IsLast" targeted lines only in maxPlacement of last opportunity in the break - V
+6249 - ADS uses sessionPlacementSequence for MCLPS by placement - V
+6250 - ADS uses breakPlacementSequence for backToback separationConstraint - V
+6251 - ADS uses new calculation for breakPlacementSequence value provided to SMSi Publisher - V
+
+Epic 5703 - POIS
+MMF 5709 - POIS Validates POISQueryRequest
+MMF 5719 - POIS Publishes Basic POISQueryResponse compliant with SCTE_130-5_2010 schema
+
+MMF 5704 - POIS Configurations
+5705 - 1 to many "endpoints" (source endpoint) are configured for an operator - W
+5707 - An endpoint can be configured to receive raw ownership rules or executed ownership results
+6281 - An endpoint can be configured to receive only opportunities reconciled with the SignalGroup Asset - W
+6487 - An endpoint can be configured to accommodate a  missing SignalGroup Asset - W
+6488 - An endpoint can be configured to default a lead black opportunity
+6515 - An endpoint can be configured for opportunity merging
+5708 - An endpoint can be configured to receive a SignalGroup Asset with each Ad Map - W
+5718 - An endpoint can be configured to interpret the PAID harvested from the POISQueryRequest as Offer PAID or Movie PAID
+6282 - Configure "Owner" translations for an operator
+
+MMF 5733 - POIS Validates and Ingests Ad Maps (PlacementOpportunityGroup Assets) from ALM
+5734 - POIS validates PlacementOpportunityGroup Asset element and attributes
+5736 - POIS validates AlternateId
+5737 - POIS validates every PlacementOpportunityRegion and its' attributes
+5738 - POIS validates PlacementOpportunityOwnerRule for each PlacementOpportunityRegion
+5739 - POIS validates SignalRegionRef for each PlacementOpportunityRegion
+5740 - POIS validates LinearVideoAd and its' attributes for each PlacementOpportunityRegion
+5741 - POIS persists the information from validated PlacementOpportunityGroup assets
+
+MMF 5743 - POIS Validates and Ingests Ad Map Groups (GroupOfPlacementOpportunityGroup Assets) from ALM
+5768 - POIS validates GroupOfPlacementOpportunityGroup Asset element and attributes
+5822 - POIS validates POGroupLinkage element
+5748 - POIS persists the information from validated GroupOfPlacementOpportunityGroup assets
+
+MMF 5744 - POIS Validates and Ingests ContentPOGroupsLinkage Assets from ALM
+5769 - POIS validates ContentPOGroupsLinkage Asset element and attributes
+5823 - POIS Validates ContentRef element and GroupOfPlacementOpporutnityGroupsRef element
+5749 - POIS persists the information from validated ContentPOGroupsLinkage assets
+
+MMF 5745 - POIS Validates and Ingests Offer Assets from ALM
+5824 - POIS validates Offer Asset element and attributes
+5825 - POIS validates ContentGroupRef
+5750 - POIS persists the information from validated Offer assets
+
+MMF 5746 - POIS Validates and Ingests ContentGroup Assets from ALM
+5826 - POIS validates ContentGroup Asset element and attributes
+5827 - POIS validates TitleRef
+5828 - POIS validates MovieRef
+5751 - POIS persists the information from validated ContentGroup assets
+
+MMF 5747 - POIS Validates and Ingests Movie Assets from ALM
+5829 - POIS validates Movie Asset element and attributes
+5830 - POIS validates SignalGroupRef
+5752 - POIS persists the information from validated Movie assets
+
+MMF 5753 - POIS Validates and Ingests Title Assets from ALM
+5831 - POIS validates Title Asset element and attributes
+5832 - POIS validates LinearBroadcastDate
+5754 - POIS persists the information from validated Title assets
+
+MMF  6188 - POIS Validates and Ingests SignalGroup Assets from ALM
+6187 - POIS validates SignalGroup Asset element and attributes
+6189 - POIS validates every SignalRegion element and its' attributes
+6190 - POIS validates SignalRegion.AlternateId
+6191 - POIS validates StartPoint for each SignalRegion
+6192 - POIS validates EndPoint for each SignalRegion
+6193 - POIS persists the information from validated SignalGroup assets
+
+MMF 5712 - POIS identifies the correct Ad Map from the POISQueryRequest
+5713 - POIS harvests PAID from POISQueryRequest
+5715 - POIS harvests all possible Info from Invalid POISQueryRequest messages
+5714 - POIS identifies Movie asset from Offer asset
+5716 - POIS identifies Ad Map Group for Movie asset
+5717 - POIS identifies Ad Map from those in Ad Map Group
+
+MMF 6283 - POIS reconciles selected Ad Map with SignalGroup asset for configured endpoints
+6284 - POIS identifies correct SignalGroup asset for Entertainment PAID - W
+6285 - POIS removes opportunities from the "to be published" Ad Map when they are not supported in the SignalGroup asset - W
+6486 - When no SignalGroup asset exists for Entertainment PAID, POIS implements Pre-roll and Post-roll - W
+6518 - When configured, POIS inserts a lead black opportunity when the SignalGroup asset is absent
+
+MMF 6287 - POIS Tracking
+6288 - POIS tracks each POISQueryRequest - W
+6289 - POIS tracks asset usage for each POISQueryRequest - W
+6290 - POIS tracks published allocation for each opportunity
+6291 - POIS tracks unreconciled opportunities
+
+MMF 6516 - POIS Merges Placement Opportunities when endpoint is configured
+6517 - POIS merges PlacementOpportunityRegion elements when conditions are met
+6519 - POIS creates a single PlacementOpportunityRegion element from the merged PlacementOpportunityRegion elements
+
+Reporting (Benchmark Insights)
+Task - Production Support (Task) - W
+Spike - Look into Benchmark IIR needs (Spike) - W
+
+VODDAI-6635 - Support for Promo vs Paid in reporting, CM (MMF)
+VODDAI-6636 - Add promo impressions column to the IIR - W
+VODDAI-6598 - Work with Ops for automated scheduling and user groups - V, W
+Innovid Integration (SaFI - CIP/SMSi)
+
+Campaign Manager Work (Production prep, UI enhancements)
+
+VODDAI-6048 - Campaign Manager Improvements: Programmer Release (MMF)
+VODDAI-6049 - Update 'Contact Us' Link - W
+VODDAI-6195 - Create Link to User Guide - W
+VODDAI-6000 - Set Line Item "Value" maximum to 400
+VODDAI-6126 -  Programmer PCC  (MMF)
+VODDAI-6127 -  Enable Programmer Specific Product Category List - W
+VODDAI-6128 -  Programmer Specific Product Category List - Aliases - W
+VODDAI-6129 -  Programmer Specific Product Category List - Display - W
+
+VODDAI-6633 - Streamline the Campaign create/edit process (MMF)
+VODDAI-6636 - Add promo impressions column to IIR - W
+VODDAI-6011 - Derive Flight Window information on Campaign add/edit page
+VODDAI-6012 - Move Goal Type from Campaign to Line Item
+VODDAI-6044 - Remove Campaign Type from Campaign add/edit
+
+Performance Test
+HP Infrastructure
+Pod Optimization
+
+Other
+6656 - PCI prevents north-bound integrators (CIP Publishers from removing remove or modify ad assets once assigned/persisted to a campaign line
+
+MMF 6661 - Mulitple DayPart support for Campaign Line
+6655 - CIP Publisher supports multiple dayparts for a campaign line
+6662 - ADS CIP Ingest supports multiple dayparts for a campaign line
+6663 - PCI supports multiple dayparts for a campaign line
+6664 - ADS even goal calc constrains flight by the last daypart in the flight window
+
+6665 - PCI accepts alternate xpath for opportunityType/mid-roll break targeting terms
+6329 - Canoe using wrong annotation to process SOAP messages (sends nothing in Response header)<http://10.13.18.94:8080/JIRA/browse/VODDAI-6329>
+
+Bugs
+5967 - SMSI De-Dupe Procs hang indefinitely if no activity to process. Requires manual DB reset
+5963 - Optimistic Lock error in PCI on ingesting FW CIPs while CIP-Batch is running
+6090 - Microstrategy does not pull views that have happened outside of a line item window.
+5379 - SMSi Ingestor throwing error during hour of dailylight savings
+6614 - CIP feedback notification ingestor becoming unresponsive
+6606 - CM: Auto-load of additional campaigns on dashboard screen or following search not working for Chrome
+SERVASSUR-199  - DCE monitors and alerts when a de-duping interval has NO SMSi records to process
+
+
+Canoe Ventures
+Tim Whitton
+Principal Product Manager - VOD DAI
+
+160 Inverness Drive West   Suite 200
+Englewood, CO 80112
+303-224-3163 Office Phone
+303-854-8274 Mobile
+
+tim.whitton@canoeventures.net<mailto:tim.whitton@canoe-ventures.com>
+www.canoe-ventures.com<http://www.canoe-ventures.com/>
+
+
+
+
+--_000_dbcc289eae0547058f108151a40bde39CO2PR0601MB0998namprd06_
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Exchange Server">
+<!-- converted from rtf -->
+<style><!-- .EmailQuote { margin-left: 1pt; padding-left: 4pt; border-left: #800000 2px solid; } --></style>
+</head>
+<body>
+<font face="Calibri" size="2"><span style="font-size:11pt;">
+<div><font color="#1F497D"><b>For Sprint X (ends December 9)</b></font></div>
+<ol style="text-align:justify;margin:0;padding-left:18pt;">
+<li>HP Infrastructure - Performance Test</li><li>Data Collector - Data Persistence/SMSi Pub</li><li>COX National ADS Implementation</li><li>Campaign Manager (Prep for Pilot User, UX Improvements and Fixes from Ops)</li><li>POIS (COX) &#8211; Ad Map selection logic</li><li>POD Optimization &#8211; SMSi change</li><li>Performance Test &#8211; DC Routing</li><li>Reporting (Benchmark Insights, Support for migration to HPC)</li><li>Tech Debt &#8211; Separate SMSi Ingestion/Dedup/Relay from reporting</li><li>Innovid SaFI (CIP &amp; SMSi) Integration</li><li>JAVA Upgrade</li></ol>
+<div>&nbsp;</div>
+<div><font color="red"><b>Epic 6330 - Canoe Data Collector</b></font></div>
+<div><b><strike>MMF 6343 &#8211; When a message is received through a Collection endpoint, the Data Collector validates messages</strike></b></div>
+<div>&nbsp;</div>
+<div><b>MMF 6491 - Tech Ops User configures Data Collector</b></div>
+<div>6493 - Data Collector endpoint is designated for Collection or Routing</div>
+<div>6503 - Tech Ops User configures a max response time for PlacementRequest</div>
+<div>6504 - Tech Ops User configures a max response time for PlacementStatusNotification</div>
+<div><strike>6355 &#8211; Tech Ops User Configures Identity/ProviderID combination with routing endpoint</strike><b><strike> - U</strike></b></div>
+<div><font color="red">&nbsp;</font></div>
+<div><b>MMF 6495 - Data Collector Routes messages received through a routing endpoint</b></div>
+<div><strike>6484 - Data Collector routes a PlacementRequest message received through a Routing endpoint</strike><b><strike> - U</strike></b></div>
+<div><strike>6496 - Data Collector routes a PlacementResponse message when PlacementRequest was routed</strike><b><strike> - U</strike></b></div>
+<div>6497 - Data Collector routes a PlacementStatusNotification message received through a Routing endpoint<b> - W</b></div>
+<div>6499 - Data Collector routes a PlacementStatusAcknowledgement message when PlacementStatusNotification was routed<b> - W</b></div>
+<div>6500 - Routed message is validated</div>
+<div>6522 - Data Collector routing is Fault Tolerant</div>
+<div>6523 - Data Collector routing uses redundant infrastructure</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><font color="red"><b>COX Integration (SCTE 130)</b></font></div>
+<div>&nbsp;</div>
+<div><font color="red"><b>MMF 6246 - POD Optimization</b><b> (non ADS)</b></font></div>
+<div>6639 - SCTE ingester persists multiple placements per placement decision <b>&#8211; W</b> (Tranformers)</div>
+<div>6252 - ADM produces PlacementRequests with PlacementOpportunities allowing more than 1 placement (BA Router Configuration)</div>
+<div>6611 - The ADS meets current performance requirements when PlacementRequest contain optimized opportunities (maxPlacement&gt;1)</div>
+<div>6255 - Produce an &#8220;Unfilled Break Duration&#8221; report.</div>
+<div><strike>6247 - ADS excludes campaign lines that target position greater than the sum of the maxPlacement of all opportunities in the break</strike><b><strike> - V</strike></b></div>
+<div><strike>6248 - ADS uses breakPlacementSequence for position targeting</strike><b><strike> - V</strike></b></div>
+<div><strike>6253 - ADS places &#8220;IsLast&#8221; targeted lines only in maxPlacement of last opportunity in the break</strike><b><strike> - V</strike></b></div>
+<div><strike>6249 - ADS uses sessionPlacementSequence for MCLPS by placement</strike><b><strike> - V</strike></b></div>
+<div><strike>6250 - ADS uses breakPlacementSequence for backToback separationConstraint</strike><b><strike> - V</strike></b></div>
+<div><strike>6251 - ADS uses new calculation for breakPlacementSequence value provided to SMSi Publisher</strike><b><strike> - V</strike></b></div>
+<div>&nbsp;</div>
+<div><font color="red"><b>Epic 5703 &#8211; POIS </b></font></div>
+<div><b><strike>MMF 5709 &#8211; POIS Validates POISQueryRequest</strike></b></div>
+<div><b><strike>MMF 5719 - POIS Publishes Basic POISQueryResponse compliant with SCTE_130-5_2010 schema</strike></b></div>
+<div>&nbsp;</div>
+<div><b>MMF 5704 &#8211; POIS Configurations</b></div>
+<div>5705 &#8211; 1 to many &#8220;endpoints&#8221; (source endpoint) are configured for an operator<b> - W</b></div>
+<div>5707 - An endpoint can be configured to receive raw ownership rules or executed ownership results</div>
+<div>6281 - An endpoint can be configured to receive only opportunities reconciled with the SignalGroup Asset<b> - W</b></div>
+<div>6487 - An endpoint can be configured to accommodate a&nbsp; missing SignalGroup Asset<b> - W</b></div>
+<div>6488 - An endpoint can be configured to default a lead black opportunity</div>
+<div>6515 - An endpoint can be configured for opportunity merging</div>
+<div>5708 - An endpoint can be configured to receive a SignalGroup Asset with each Ad Map<b> - W</b></div>
+<div>5718 - An endpoint can be configured to interpret the PAID harvested from the POISQueryRequest as Offer PAID or Movie PAID</div>
+<div>6282 - Configure &#8220;Owner&#8221; translations for an operator</div>
+<div>&nbsp;</div>
+<div><b>MMF 5733 &#8211; POIS Validates and Ingests Ad Maps (PlacementOpportunityGroup Assets) from ALM</b></div>
+<div>5734 - POIS validates PlacementOpportunityGroup Asset element and attributes</div>
+<div>5736 - POIS validates AlternateId</div>
+<div>5737 - POIS validates every PlacementOpportunityRegion and its&#8217; attributes</div>
+<div>5738 - POIS validates PlacementOpportunityOwnerRule for each PlacementOpportunityRegion</div>
+<div>5739 - POIS validates SignalRegionRef for each PlacementOpportunityRegion</div>
+<div>5740 - POIS validates LinearVideoAd and its&#8217; attributes for each PlacementOpportunityRegion</div>
+<div>5741 - POIS persists the information from validated PlacementOpportunityGroup assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5743 &#8211; POIS Validates and Ingests Ad Map Groups (GroupOfPlacementOpportunityGroup Assets) from ALM</b></div>
+<div>5768 - POIS validates GroupOfPlacementOpportunityGroup Asset element and attributes</div>
+<div>5822 - POIS validates POGroupLinkage element</div>
+<div>5748 - POIS persists the information from validated GroupOfPlacementOpportunityGroup assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5744 &#8211; POIS Validates and Ingests ContentPOGroupsLinkage Assets from ALM</b></div>
+<div>5769 - POIS validates ContentPOGroupsLinkage Asset element and attributes</div>
+<div>5823 - POIS Validates ContentRef element and GroupOfPlacementOpporutnityGroupsRef element</div>
+<div>5749 - POIS persists the information from validated ContentPOGroupsLinkage assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5745 &#8211; POIS Validates and Ingests Offer Assets from ALM</b></div>
+<div>5824 - POIS validates Offer Asset element and attributes</div>
+<div>5825 - POIS validates ContentGroupRef</div>
+<div>5750 - POIS persists the information from validated Offer assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5746 &#8211; POIS Validates and Ingests ContentGroup Assets from ALM</b></div>
+<div>5826 - POIS validates ContentGroup Asset element and attributes</div>
+<div>5827 - POIS validates TitleRef</div>
+<div>5828 - POIS validates MovieRef</div>
+<div>5751 - POIS persists the information from validated ContentGroup assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5747 &#8211; POIS Validates and Ingests Movie Assets from ALM</b></div>
+<div>5829 - POIS validates Movie Asset element and attributes</div>
+<div>5830 - POIS validates SignalGroupRef</div>
+<div>5752 - POIS persists the information from validated Movie assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5753 &#8211; POIS Validates and Ingests Title Assets from ALM</b></div>
+<div>5831 - POIS validates Title Asset element and attributes</div>
+<div>5832 - POIS validates LinearBroadcastDate</div>
+<div>5754 - POIS persists the information from validated Title assets</div>
+<div>&nbsp;</div>
+<div><b>MMF&nbsp; 6188 &#8211; POIS Validates and Ingests SignalGroup Assets from ALM</b></div>
+<div>6187 - POIS validates SignalGroup Asset element and attributes</div>
+<div>6189 - POIS validates every SignalRegion element and its&#8217; attributes</div>
+<div>6190 - POIS validates SignalRegion.AlternateId</div>
+<div>6191 - POIS validates StartPoint for each SignalRegion</div>
+<div>6192 - POIS validates EndPoint for each SignalRegion</div>
+<div>6193 - POIS persists the information from validated SignalGroup assets</div>
+<div>&nbsp;</div>
+<div><b>MMF 5712 - POIS identifies the correct Ad Map from the POISQueryRequest</b></div>
+<div>5713 - POIS harvests PAID from POISQueryRequest</div>
+<div>5715 - POIS harvests all possible Info from Invalid POISQueryRequest messages</div>
+<div>5714 - POIS identifies Movie asset from Offer asset</div>
+<div>5716 - POIS identifies Ad Map Group for Movie asset</div>
+<div>5717 - POIS identifies Ad Map from those in Ad Map Group</div>
+<div>&nbsp;</div>
+<div><b>MMF 6283 - POIS reconciles selected Ad Map with SignalGroup asset for configured endpoints</b></div>
+<div>6284 - POIS identifies correct SignalGroup asset for Entertainment PAID<b> - W</b></div>
+<div>6285 - POIS removes opportunities from the &#8220;to be published&#8221; Ad Map when they are not supported in the SignalGroup asset<b> - W</b></div>
+<div>6486 - When no SignalGroup asset exists for Entertainment PAID, POIS implements Pre-roll and Post-roll<b> - W</b></div>
+<div>6518 - When configured, POIS inserts a lead black opportunity when the SignalGroup asset is absent</div>
+<div>&nbsp;</div>
+<div><b>MMF 6287 &#8211; POIS Tracking</b></div>
+<div>6288 &#8211; POIS tracks each POISQueryRequest<b> - W</b></div>
+<div>6289 - POIS tracks asset usage for each POISQueryRequest<b> - W</b></div>
+<div>6290 - POIS tracks published allocation for each opportunity</div>
+<div>6291 - POIS tracks unreconciled opportunities</div>
+<div>&nbsp;</div>
+<div><b>MMF 6516 - POIS Merges Placement Opportunities when endpoint is configured</b></div>
+<div>6517 - POIS merges PlacementOpportunityRegion elements when conditions are met</div>
+<div>6519 - POIS creates a single PlacementOpportunityRegion element from the merged PlacementOpportunityRegion elements</div>
+<div>&nbsp;</div>
+<div><font color="red"><b>Reporting</b><b> </b><font color="black">(Benchmark Insights)</font></font></div>
+<div>Task - Production Support (Task) -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W<br>
+
+</b></span></font>Spike - Look into Benchmark IIR needs (Spike) -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W</b></span></font></div>
+<div style="margin-top:5pt;margin-bottom:5pt;"><font size="3"><span style="font-size:12pt;"><b>VODDAI-6635 - Support for Promo vs Paid in reporting, CM (MMF)<br>
+
+</b><font size="2"><span style="font-size:11pt;">VODDAI-6636 - Add promo impressions column to the IIR -</span></font> <b>W</b></span></font></div>
+<div style="margin-bottom:12pt;">VODDAI-6598 - Work with Ops for automated scheduling and user groups -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>V, W</b></span></font></div>
+<div><font color="red"><b>Innovid Integration (SaFI &#8211; CIP/SMSi)</b></font></div>
+<div>&nbsp;</div>
+<div><font size="3" color="red"><span style="font-size:11.5pt;"><b>Campaign Manager Work</b><b> (</b><b>Production prep, UI enhancements)</b></span></font></div>
+<div style="margin-top:5pt;margin-bottom:5pt;"><b>VODDAI-6048 - Campaign Manager Improvements: Programmer Release (MMF)<br>
+
+</b>VODDAI-6049 - Update 'Contact Us' Link -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W<br>
+
+</b></span></font>VODDAI-6195 - Create Link to User Guide -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W<br>
+
+</b></span></font>VODDAI-6000 - Set Line Item &quot;Value&quot; maximum to 400</div>
+<div><b>VODDAI-6126 -&nbsp; Programmer PCC&nbsp; (MMF)</b></div>
+<div>VODDAI-6127 -&nbsp; Enable Programmer Specific Product Category List -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W</b></span></font></div>
+<div>VODDAI-6128 -&nbsp; Programmer Specific Product Category List - Aliases -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W</b></span></font></div>
+<div>VODDAI-6129 -&nbsp; Programmer Specific Product Category List &#8211; Display -<font size="3"><span style="font-size:12pt;"> </span></font><font size="3"><span style="font-size:12pt;"><b>W</b></span></font></div>
+<div>&nbsp;</div>
+<div><b>VODDAI-6633 - Streamline the Campaign create/edit process (MMF)<br>
+
+</b>VODDAI-6636 &#8211; Add promo impressions column to IIR<b> &#8211; W</b></div>
+<div>VODDAI-6011 - Derive Flight Window information on Campaign add/edit page<br>
+
+VODDAI-6012 - Move Goal Type from Campaign to Line Item<br>
+
+VODDAI-6044 - Remove Campaign Type from Campaign add/edit</div>
+<div>&nbsp;</div>
+<div><font color="red"><b>Performance Test</b></font></div>
+<div><font size="2"><span style="font-size:10.5pt;">HP Infrastructure</span></font></div>
+<div><font size="2"><span style="font-size:10.5pt;">Pod Optimization</span></font></div>
+<div>&nbsp;</div>
+<div><font color="red"><b>Other</b></font></div>
+<div>6656 - PCI prevents north-bound integrators (CIP Publishers from removing remove or modify ad assets once assigned/persisted to a campaign line</div>
+<div>&nbsp;</div>
+<div><b>MMF 6661 &#8211; Mulitple DayPart support for Campaign Line</b></div>
+<div>6655 &#8211; CIP Publisher supports multiple dayparts for a campaign line</div>
+<div>6662 - ADS CIP Ingest supports multiple dayparts for a campaign line</div>
+<div>6663 - PCI supports multiple dayparts for a campaign line</div>
+<div>6664 - ADS even goal calc constrains flight by the last daypart in the flight window</div>
+<div>&nbsp;</div>
+<div>6665 - PCI accepts alternate xpath for opportunityType/mid-roll break targeting terms</div>
+<div><font size="2"><span style="font-size:10.5pt;">6329 - <a href="http://10.13.18.94:8080/JIRA/browse/VODDAI-6329">Canoe using wrong annotation to process SOAP messages (sends nothing in Response header)</a></span></font></div>
+<div><font color="red">&nbsp;</font></div>
+<div><font size="2" color="red"><span style="font-size:10.5pt;"><b>Bugs</b></span></font></div>
+<div>5967 - SMSI De-Dupe Procs hang indefinitely if no activity to process. Requires manual DB reset</div>
+<div>5963 &#8211; Optimistic Lock error in PCI on ingesting FW CIPs while CIP-Batch is running</div>
+<div><font size="2"><span style="font-size:10.5pt;">6090 - Microstrategy does not pull views that have happened outside of a line item window.</span></font></div>
+<div><font size="2"><span style="font-size:10.5pt;">5379 - SMSi Ingestor throwing error during hour of dailylight savings</span></font></div>
+<div><font size="2"><span style="font-size:10.5pt;">6614 - CIP feedback notification ingestor becoming unresponsive</span></font></div>
+<div><font size="2"><span style="font-size:10.5pt;">6606 - CM: Auto-load of additional campaigns on dashboard screen or following search not working for Chrome</span></font></div>
+<div>SERVASSUR-199&nbsp; - DCE monitors and alerts when a de-duping interval has NO SMSi records to process</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:10pt;"><b>Canoe Ventures</b></span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">Tim Whitton</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">Principal Product Manager &#8211; VOD DAI</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">&nbsp;</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">160 Inverness Drive West&nbsp;&nbsp; Suite 200</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">Englewood, CO 80112</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">303-224-3163 Office Phone</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">303-854-8274 Mobile</span></font></div>
+<div><font face="Arial" size="2" color="#717074"><span style="font-size:9pt;">&nbsp;</span></font></div>
+<div><a href="mailto:tim.whitton@canoe-ventures.com"><font face="Arial" size="2" color="blue"><span style="font-size:9pt;"><u>tim.whitton@canoeventures.net</u></span></font></a></div>
+<div><a href="http://www.canoe-ventures.com/"><font face="Arial" size="2" color="blue"><span style="font-size:9pt;"><u>www.canoe-ventures.com</u></span></font></a></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</span></font>
+</body>
+</html>
+
+--_000_dbcc289eae0547058f108151a40bde39CO2PR0601MB0998namprd06_--
