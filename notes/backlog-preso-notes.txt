@@ -11,7 +11,7 @@ I want to re-introduce the product backlog artifact to you, make you realize it'
 The Product Backlog
 
     Applies to Scrum methodology, but useful elsewhere.
-    Arguably, the single most important artifact in the Scrum methodology
+    Inarguably, the single most important artifact in the Scrum methodology
 
 What makes it work
     Single copy and single source of truth
@@ -53,7 +53,7 @@ What Canoe Does
 
 Definition
     Simple: A list of things to do
-    Advanced: An ordered list of eveyrthing that might be needed in the product and is the single source of requirements for any changes to be made to the product.
+    Advanced: An ordered list of everything that might be needed in the product and is the single source of requirements for any changes to be made to the product.
     Captures requests for modifying the product
         adding, updating, deprecating, removing features
         fixing bugs
