@@ -32,3 +32,6 @@ node_modules
 
 # F-ing .DS_Store
 **.DS_Store
+
+# Temporary Excel files
+**~$*.xlsx
